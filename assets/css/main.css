@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: #19223f;
+  height: 100vh;
+}
+.hamburger {
+  padding: 0 !important;
+}
+.hamburger-inner,
+.hamburger-inner::after,
+.hamburger-inner::before {
+  background-color: #f59e0b !important;
+  /* aspect-ratio: 10/1 !important; */
+}
+
+nav {
+  transition: all 0.3s ease;
+}
+
+/* .menu:target{
+    left: 0;
+  } */
