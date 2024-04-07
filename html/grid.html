@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .gridder {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 1rem;
+        padding: 1rem;
+      }
+      .card {
+        background-color: #fff;
+        border: 1px solid orangered;
+        padding: 1rem;
+        border-radius: 1rem;
+        justify-self: center;
+        aspect-ratio: 9/16;
+      }
+
+      @media (max-width: 390px) {
+        .gridder {
+          grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="gridder">
+      <div class="card">
+        <h3>Card One</h3>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam
+          temporibus, nulla dolore similique atque ipsam!
+        </p>
+      </div>
+      <div class="card">
+        <h3>Card One</h3>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam
+          temporibus, nulla dolore similique atque ipsam!
+        </p>
+      </div>
+      <div class="card">
+        <h3>Card One</h3>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam
+          temporibus, nulla dolore similique atque ipsam!
+        </p>
+      </div>
+      <div class="card">
+        <h3>Card One</h3>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam
+          temporibus, nulla dolore similique atque ipsam!
+        </p>
+      </div>
+      <div class="card">
+        <h3>Card One</h3>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam
+          temporibus, nulla dolore similique atque ipsam!
+        </p>
+      </div>
+      <div class="card">
+        <h3>Card One</h3>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam
+          temporibus, nulla dolore similique atque ipsam!
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
