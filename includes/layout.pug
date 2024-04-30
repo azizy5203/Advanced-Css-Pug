@@ -1,2 +1,28 @@
-div.bg-red-200
-    
+
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  meta(http-equiv='X-UA-Compatible' content='ie=edge')
+  title HTML + CSS
+  link(rel='stylesheet' href='../assets/css/main.css')
+  script(src='https://cdn.tailwindcss.com')
+  link(rel='stylesheet' href='../assets/css/menues.css')
+  link(rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css')
+  script(defer='' src='../assets/js/main.js')
+
+body
+    div.bg-blue-200.p-5.border-2.border-blue-400
+        h1
+            | Layout Title
+        block content
+    footer.bg-gray-700.pa-4
+        ul.list-style-none
+            li
+                |Home
+            li
+                |Courses
+            li
+                |Profile
+            li
+                |Jobs

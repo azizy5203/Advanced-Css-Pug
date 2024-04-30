@@ -1,40 +1,5 @@
-doctype html
-head
-  meta(charset='UTF-8')
-  meta(name='viewport' content='width=device-width, initial-scale=1.0')
-  meta(http-equiv='X-UA-Compatible' content='ie=edge')
-  title HTML + CSS
-  link(rel='stylesheet' href='../assets/css/main.css')
-  script(src='https://cdn.tailwindcss.com')
-  link(rel='stylesheet' href='../assets/css/menues.css')
-  link(rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css')
-  script(defer='' src='../assets/js/main.js')
+extends ./includes/layout
 
-body
-    header.border-b.border-amber-500.flex.gap-4.items-center.ps-5.text-white(class='h-[60px] md:py-10')
-        a.hamburger.hamburger--spin(class="md:hidden")
-            span.hamburger-box
-                span.hamburger-inner
-        i.bi.bi-gitlab.text-4xl.text-amber-500
-        nav#menu.menu.absolute.w-screen.backdrop.w-full.h-screen(class='top-[60px] left-[-100%] md:block md:static md:h-auto md:ms-12' style='height: calc(100% - 60px)')
-            ul.text-amber-500.text-2xl.font-regular.h-full(class='w-3/4 bg-[#424c6d] md:flex md:gap-10  md:bg-amber-30')
-                li.flex.gap-2.items-center.p-6(class="md:p-0")
-                    i.bi.bi-house-fill
-                    a.block.w-full(href='/html/grid.html') Home
-                li.flex.gap-2.items-center.p-6(class="md:p-0")
-                    i.bi.bi-stack
-                    a.block.w-full(href='#') Courses
-                li.flex.gap-2.items-center.p-6(class="md:p-0")
-                    i.bi.bi-person-circle
-                    a.block.w-full(href='#') Account
-                li.flex.gap-2.items-center.p-6(class="md:p-0")
-                    i.bi.bi-info-circle
-                    a.block.w-full(href='#') Help
-    main.p-5
-        sction.flex.flex-col.gap-5
-            h1.text-5xl.text-amber-500 UI Dev Course
-            p.text-white.pe-8
-                | Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sint
-                | eveniet eum molestiae cum nemo rem alias mollitia autem labore assumenda
-                | culpa accusantium, itaque magni quidem sed doloribus placeat fugit nisi
-                | tempore ex ipsam illo enim saepe. Ex libero dolores fugiat laudantium.
+block content 
+    p 
+        |Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi earum aliquam sint voluptate molestias, ratione error fuga saepe iusto deleniti.
